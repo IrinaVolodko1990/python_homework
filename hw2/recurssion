@@ -5,7 +5,7 @@
 
 
 def cutAB(a,b,qty=0):
-    if a==0 or b==0:
+    if a==b:
         return ("Полученное число квадратов: \n"+str(qty))
     elif a<b:
         print ("Ребро квадрата: \n"+str(a))
