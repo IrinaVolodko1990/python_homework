@@ -6,6 +6,8 @@
 
 def cutAB(a,b,qty=0):
     if a==b:
+    print ("Ребро квадрата: \n"+str(a))
+        qty+=1
         return ("Полученное число квадратов: \n"+str(qty))
     elif a<b:
         print ("Ребро квадрата: \n"+str(a))
