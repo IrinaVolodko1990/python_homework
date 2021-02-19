@@ -5,8 +5,10 @@
 
 
 def cutAB(a,b,qty=0):
+    if a<=0 or b<=0:
+        return print ("Введённые данные некорректны")
     if a==b:
-    print ("Ребро квадрата: \n"+str(a))
+        print ("Ребро квадрата: \n"+str(a))
         qty+=1
         return ("Полученное число квадратов: \n"+str(qty))
     elif a<b:
@@ -17,5 +19,6 @@ def cutAB(a,b,qty=0):
 
 a=int(input("Введите сторону 'a' прямоугольника:\n"))
 b=int(input("Введите сторону 'b' прямоугольника:\n"))
+
 print(cutAB(a,b))
 
